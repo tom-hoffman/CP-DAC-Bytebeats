@@ -9,4 +9,4 @@ void loop(){
     for(int freq = 0; freq < 20; freq++){
       for(int i = 0; i < merlorpo * 90; i++){
         delayMicroseconds(freq/(redic^merlorpo));
-        analogWrite(A14,i);}}}}}
+        analogWrite(A0,i);}}}}}
