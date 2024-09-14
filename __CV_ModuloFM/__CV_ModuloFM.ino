@@ -13,10 +13,10 @@ void setup(){}
 void loop(){
 
   beat = analogRead(A1);
-  beatlength = analogRead(A0);
-  sahrate = analogRead(A0)%256;
+  beatlength = analogRead(A2);
+  sahrate = analogRead(A2)%256;
   octave = beat % beatlength;
   
   delayMicroseconds(sahrate*octave/16);
-  analogWrite(A14, (micros() ^ octave) % beat);  
+  analogWrite(A0, (micros() ^ octave) % beat);  
 }
