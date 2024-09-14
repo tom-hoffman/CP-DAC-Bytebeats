@@ -4,6 +4,8 @@ Direct fork of https://github.com/MacroMachines/Teensy-DAC-Bytebeats to work out
 
 The only trivial changes is changing the DAC pin from A14 (teensy 3.1) to A0 (Circuit Playground Express).
 
+Not all are done... see the commit notes and dates to figure it out.
+
 Circuit Playground port of experimental synthesizers using various arbitrary math to create audio output on the teensy 3.1 DAC pin
 
 several vine clips of the sketches in action: 
