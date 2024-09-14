@@ -10,5 +10,5 @@ void loop(){
   for(int freq = 0; freq < 12; freq++){
   for(int i = 0; i < merlorpo * 90; i++){
      delayMicroseconds(freq/(redic^merlorpo));
-     analogWrite(A14,i);
-     analogWrite(A14,meeeleeepee*512);}}}}}}
+     analogWrite(A0,i);
+     analogWrite(A0,meeeleeepee*512);}}}}}}
