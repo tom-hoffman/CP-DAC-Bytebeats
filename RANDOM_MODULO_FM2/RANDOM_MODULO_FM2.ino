@@ -24,7 +24,7 @@ void loop(){
     beat = (beat+beatrate) % beatlength;
     octave = beat;}
   
-  analogWrite(A14, (micros() / octave) % 256);  
+  analogWrite(A0, (micros() / octave) % 256);  
   
   loopcounts++;
 }
