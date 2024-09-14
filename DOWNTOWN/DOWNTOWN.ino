@@ -16,12 +16,12 @@ void loop(){
         freq ^= random(meeeleeepee/5);
   for(int i = 0; i < merlorpo * 30 ; i++){
      delayMicroseconds(freq/(redic^merlorpo)*100);
-     analogWrite(A14,i^merlorpo);
+     analogWrite(A0,i^merlorpo);
      redic += random(meeeleeepee);
      if(redic > 3){
        delayMicroseconds((freq*redic%merlorpo)/8);}
      if(skunkmusket < 2){
        delayMicroseconds((freq%redic^merlorpo)*.01);}
      
-     //analogWrite(A14,meeeleeepee^512);
+     //analogWrite(A0,meeeleeepee^512);
    }}}}}}
