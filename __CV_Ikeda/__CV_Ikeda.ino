@@ -3,7 +3,7 @@
 byte octave = 8;
 byte beat = 12;
 byte mod;
-
+ 
 void setup(){}
 
 void loop(){
