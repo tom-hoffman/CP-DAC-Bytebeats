@@ -8,7 +8,7 @@ void loop(){
       for(int kick = 0; kick < 16*loopy; kick++){
       for(int i = 0; i < 512/measure; i++){
         delayMicroseconds(i/kick%loopy);
-        analogWrite(A14,i);}}}
+        analogWrite(A0,i);}}}
       
     int skunkmusket = loopy%measure;
     if(skunkmusket < 8){
@@ -22,7 +22,7 @@ void loop(){
        freq ^= (meeeleeepee/4);
     for(int i = 0; i < merlorpo * 64 ; i++){
        delayMicroseconds(freq/(redic^merlorpo)*96);
-       analogWrite(A14,i^merlorpo);
+       analogWrite(A0,i^merlorpo);
        redic %= (meeeleeepee);
        if(redic > 4){
          delayMicroseconds((freq*redic%merlorpo)/16);}
