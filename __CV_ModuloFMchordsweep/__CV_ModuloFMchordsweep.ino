@@ -11,5 +11,5 @@ void loop(){
   mod = analogRead(A0)/4;
 
   delayMicroseconds(mod);
-  analogWrite(A14, (micros()%freq)); 
+  analogWrite(A0, (micros()%freq)); 
 }
