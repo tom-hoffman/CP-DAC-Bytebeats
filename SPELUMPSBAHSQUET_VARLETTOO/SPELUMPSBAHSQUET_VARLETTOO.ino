@@ -13,10 +13,10 @@ void loop(){
         freq ^= random(meeeleeepee);
   for(int i = 0; i < merlorpo * 90; i++){
      delayMicroseconds(freq/(redic^merlorpo));
-     analogWrite(A14,i^merlorpo);
+     analogWrite(A0,i^merlorpo);
      
     
      redic += random(meeeleeepee);
      
-     //analogWrite(A14,meeeleeepee^512);
+     //analogWrite(A0,meeeleeepee^512);
    }}}}}}
