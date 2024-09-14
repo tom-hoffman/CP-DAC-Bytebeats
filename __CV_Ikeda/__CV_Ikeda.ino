@@ -10,5 +10,5 @@ void loop(){
     mod = analogRead(A0);
     beat = analogRead(A1);
     octave = beat/mod;
-    analogWrite(A14, (micros() % octave*10));  
+    analogWrite(A0, (micros() % octave*10));  
 }
