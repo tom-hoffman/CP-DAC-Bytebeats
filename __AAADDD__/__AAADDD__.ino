@@ -24,7 +24,7 @@ void SPELUMP(){
   for(int freq = 0; freq < 12; freq++){
   for(int i = 0; i < merlorpo * 90; i++){
   delayMicroseconds(freq/(redic^merlorpo));
-  analogWrite(A14,i^merlorpo);}}}}}}
+  analogWrite(A0,i^merlorpo);}}}}}}
    
    
    
@@ -35,7 +35,7 @@ void MELORPO(){
   for(int freq = 0; freq < 20; freq++){
   for(int i = 0; i < merlorpo * 90; i++){
   delayMicroseconds(freq/(redic^merlorpo));
-  analogWrite(A14,i);}}}}}
+  analogWrite(A0,i);}}}}}
   
   
   
@@ -51,7 +51,7 @@ void TENTARTAN(){
       for(int kick = 0; kick < 8*loopy; kick++){
       for(int i = 0; i < (512%kick); i++){
         delayMicroseconds(i/kick%loopy);
-        analogWrite(A14,i);}}}
+        analogWrite(A0,i);}}}
       
     int skunkmusket = loopy%measure;
     if(skunkmusket < 8){
@@ -65,14 +65,14 @@ void TENTARTAN(){
        freq ^= (meeeleeepee/4);
     for(int i = 0; i < merlorpo * 64 ; i++){
        delayMicroseconds(freq/(redic^merlorpo)*96);
-       analogWrite(A14,i^merlorpo);
+       analogWrite(A0,i^merlorpo);
        redic %= (meeeleeepee);
        if(redic > 4){
          delayMicroseconds((freq*redic%merlorpo)/16);
-         analogWrite(A14,i^redic);}
+         analogWrite(A0,i^redic);}
        if(skunkmusket < 2){
          delayMicroseconds((freq%redic^merlorpo)/4);
-         analogWrite(A14,i^loopy);}}}}}}}}
+         analogWrite(A0,i^loopy);}}}}}}}}
 }  
 
 
@@ -88,7 +88,7 @@ void TENTAMOD(){
       for(int kick = 0; kick < 16*loopy; kick++){
       for(int i = 0; i < 512/measure; i++){
         delayMicroseconds(i/kick%loopy);
-        analogWrite(A14,i);}}}
+        analogWrite(A0,i);}}}
       
     int skunkmusket = loopy%measure;
     if(skunkmusket < 8){
@@ -102,7 +102,7 @@ void TENTAMOD(){
        freq ^= (meeeleeepee/4);
     for(int i = 0; i < merlorpo * 64 ; i++){
        delayMicroseconds(freq/(redic^merlorpo)*96);
-       analogWrite(A14,i^merlorpo);
+       analogWrite(A0,i^merlorpo);
        redic %= (meeeleeepee);
        if(redic > 4){
          delayMicroseconds((freq*redic%merlorpo)/16);}
@@ -125,7 +125,7 @@ void SPELUMPSQUET(){
         freq ^= random(meeeleeepee);
   for(int i = 0; i < merlorpo * 90; i++){
      delayMicroseconds(freq/(redic^merlorpo));
-     analogWrite(A14,i^merlorpo);
+     analogWrite(A0,i^merlorpo);
      redic += random(meeeleeepee);}}}}}
  }
  
@@ -154,7 +154,7 @@ unsigned long loopcounts;
     beat = (beat+beatrate) % beatlength;
     octave = beat;}
   
-  analogWrite(A14, (micros() / octave) % 256);  
+  analogWrite(A0, (micros() / octave) % 256);  
   
   loopcounts++;
 }
@@ -167,7 +167,7 @@ void BASEKETBALLS(){
    
     if(measure == 0 || measure == 4){
       for(int i = 0; i < 255; i++){
-        analogWrite(A14,i^loopy);}}
+        analogWrite(A0,i^loopy);}}
       
     int skunkmusket = loopy%measure;
     if(skunkmusket < 5){
@@ -181,7 +181,7 @@ void BASEKETBALLS(){
        freq ^= (meeeleeepee/5);
     for(int i = 0; i < merlorpo * 30 ; i++){
        delayMicroseconds(freq/(redic^merlorpo)*100);
-       analogWrite(A14,i^merlorpo);
+       analogWrite(A0,i^merlorpo);
        redic %= (meeeleeepee);
        if(redic > 3){
          delayMicroseconds((freq*redic%merlorpo)/16);}
