@@ -2,7 +2,7 @@
 
 Direct fork of https://github.com/MacroMachines/Teensy-DAC-Bytebeats to work out of the box with the Adafruit Circuit Playground.
 
-The only trivial changes is changing the DAC pin from A14 (teensy 3.1) to A0 (Circuit Playground Express).
+The primary trivial change is switching the DAC pin from A14 (teensy 3.1) to A0 (Circuit Playground Express).  Some of these are reading different pins.  Haven't figured those out yet.
 
 Not all are done... see the commit notes and dates to figure it out.
 
