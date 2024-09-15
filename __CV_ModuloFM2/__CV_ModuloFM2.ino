@@ -7,8 +7,8 @@ void setup(){}
 void loop(){
 
   freq = analogRead(A1)/32;
-  mod = analogRead(A0)/32;
+  mod = analogRead(A2)/32;
   
   delayMicroseconds(mod);
-  analogWrite(A14, (micros() % freq));  
+  analogWrite(A0, (micros() % freq));  
 }
